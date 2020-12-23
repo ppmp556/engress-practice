@@ -1,0 +1,50 @@
+// サイト共通で必要になる設定値
+// 変数定義用
+
+
+/**********
+
+変数管理
+
+**********/
+
+//color
+$cGray: #f8f8f8;
+$cBlue: #1b224c;
+$cWhite: #ffffff;
+$cOrange: #f5a623;
+$cBorder: #707070;
+$cColor_F5: #f5f5f5;
+$cColor_B4: #b4b4b4;
+$cColor_D4: #d5d5d5;
+
+
+//font-family
+
+//-->游ゴシックver.
+$font-main:"游ゴシック Medium","Yu Gothic Medium","Yu Gothic Bold","游ゴシック体",YuGothic,sans-serif;
+
+
+// アニメーション
+$anime_nomal: all 0.2s ease-in-out;
+
+
+// SNSのメインカラー用
+$color_share: #305097;
+$color_twitter: #00aced;
+
+
+
+/*************
+
+レスポンシブ
+
+**************/
+
+
+//ブレイクポイント
+$widthPc: 1024px;
+$widthTab: 764px;
+$widthSP: 480px;
+
+
