@@ -9,10 +9,9 @@ body {
 
 
     margin: 0 auto;
-    letter-spacing: 0;
+    letter-spacing: .5em;
     font-family: $font_main;
     color: $cBlack;
-    // width: 1280px;
 
 }
 
@@ -38,6 +37,7 @@ a {
         "Meiryo", verdana, "Osaka", "MS PGothic", Sans-Serif, "Yu Mincho",
         YuMincho, "MS P Mincho", serif;
 
+    background-color: $cBgColor;
 }
 
 .container {

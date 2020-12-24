@@ -85,7 +85,7 @@ video {
 }
 
 body {
-    line-height: 1.68;
+    line-height: 1.5;
 }
 
 article,
@@ -102,10 +102,7 @@ section {
     display: block;
 }
 
-nav ul{
-    list-style: none;
-}
-ul li {
+nav ul li{
     list-style: none;
 }
 

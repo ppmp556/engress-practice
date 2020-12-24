@@ -41,11 +41,6 @@ nav
 
     &_tel {
         @include rem(16);
-
-        &:before {
-            content: '';
-            // background: url(../img/top/繝代せ\ n\29.svg);
-        }
     }
 
     @include tab {

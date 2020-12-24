@@ -12,6 +12,7 @@ header
     background-color: $cWhite;
     padding: 15px;
 
+    background-color: lightcyan;
 
     display: flex;
     align-items: center;
@@ -40,13 +41,6 @@ fv
 
     &_inner {
         margin: auto;
-    }
-    &_copy_big {
-        @include rem(48);
-        color: $cWhite;
-        font-weight: bold;
-        letter-spacing: 0;
-
     }
 }
 
