@@ -93,10 +93,6 @@ a {
   z-index: 999;
 }
 
-.inner {
-  margin: 0 15px;
-}
-
 .section_ttl {
   font-size: 36px;
   /*IE9以前に対応する*/
@@ -117,11 +113,17 @@ nav
 
 *****************************************:*/
 .nav {
-  position: relative;
+  width: 100%;
+  margin-left: 28px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav_list {
@@ -129,6 +131,10 @@ nav
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav_item {
@@ -136,19 +142,23 @@ nav
   /*IE9以前に対応する*/
   font-size: 1rem;
   line-height: 1.81;
-  margin-left: 28px;
+  margin-right: 28px;
 }
 
-.nav_item:last-child() {
-  margin-left: 0;
+.nav_item:last-child {
+  margin-right: 0;
 }
 
 .nav_contact {
+  margin-left: 326px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 326px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav_time {
@@ -160,13 +170,27 @@ nav
 }
 
 .nav_tel {
+  position: relative;
   font-size: 16px;
   /*IE9以前に対応する*/
   font-size: 1rem;
 }
 
 .nav_tel:before {
+  position: absolute;
   content: '';
+  background: url(../img/top/telcion.29.svg) no-repeat;
+  width: 18px;
+  height: 18px;
+  display: block;
+  left: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.nav_ham {
+  display: none;
 }
 
 @media screen and (max-width: 764px) and (min-width: 480px) {
@@ -284,6 +308,20 @@ nav
   }
 }
 
+.site_btn {
+  margin-left: 23px;
+  width: 140px;
+  height: 48px;
+  border: 1px solid currentColor;
+  color: #ffffff;
+  background-color: #f5a623;
+}
+
+.site_btn.__con {
+  margin-left: 10px;
+  background-color: #1b224c;
+}
+
 /****************************************:
 
 header
@@ -306,7 +344,6 @@ header
 .header_ttl {
   width: 136px;
   height: 27px;
-  margin-right: 28px;
 }
 
 /****************************************:
@@ -325,22 +362,126 @@ fv
 
 .top_fv_inner {
   margin: auto;
+  text-align: center;
 }
 
 .top_fv_copy_big {
+  margin-bottom: 28px;
   font-size: 48px;
   /*IE9以前に対応する*/
   font-size: 3rem;
   color: #ffffff;
   font-weight: bold;
   letter-spacing: 0;
+  line-height: 1.35;
+}
+
+.top_fv_copy {
+  margin-bottom: 51px;
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+  color: #ffffff;
+  line-height: 1.72;
+}
+
+.top_fv .site_btn.__fv {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 60px;
+  border-radius: 31px;
+  margin-bottom: 22px;
+}
+
+.top_fv_contact {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  color: #ffffff;
+  display: inline-block;
+  border-bottom: 1px solid #ffffff;
+}
+
+.top_fv_link {
+  display: block;
+  width: 100%;
 }
 
 /****************************************:
 
-section
+intro
 
 *****************************************:*/
+.top_intro {
+  padding: 63px 0 54px;
+  background: #1b224c;
+}
+
+.top_intro .section_ttl {
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 65px;
+}
+
+.top_intro_txtbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.top_intro_txt {
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+  margin-left: 57px;
+}
+
+.top_intro_txt:first-child {
+  margin-left: 0;
+}
+
+.top_intro_box {
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+}
+
+.top_intro_box_txt.__big {
+  font-size: 36px;
+  /*IE9以前に対応する*/
+  font-size: 2.25rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.top_intro_inbox {
+  width: 869px;
+  height: 206px;
+  border: 1px solid red;
+}
+
+.top_intro_border {
+  position: relative;
+}
+
+.top_intro_border:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #f5a623;
+  bottom: 10px;
+  left: 0;
+}
+
 /****************************************:
 
 footer

@@ -55,9 +55,7 @@ nav
             width: 18px;
             height: 18px;
             display: block;
-            left: -15px;
-            top: 50%;
-            transform: translateY(-50%);
+            left: 0;
         }
     }
 
@@ -196,12 +194,9 @@ nav
         width: 140px;
         height: 48px;
         border: 1px solid currentColor;
-        color: $cWhite;
-        background-color: $cOrange;
 
         &.__con {
             margin-left: 10px;
-            background-color: $cBlack;
         }
     }
 }

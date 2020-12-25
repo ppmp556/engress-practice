@@ -130,20 +130,15 @@ intro
         // height: 248px;
         background: $cWhite;
         text-align: center;
+        border: 5px solid $cBlack;
+        padding: 20px;
 
         &_txt.__big {
             @include rem(36);
             font-weight: bold;
             z-index: 1;
         }
-
-    }
-
-    &_inbox {
-        width: 869px;
-        height: 206px;
-        // margin: 5px;
-        border: 1px solid red;
+        
     }
 
     &_border {
@@ -157,7 +152,7 @@ intro
             background: $cOrange;
             bottom: 10px;
             left: 0;
-            // opacity: .9;
+            opacity: .9;
         }
     }
 }

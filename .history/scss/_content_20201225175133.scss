@@ -43,7 +43,6 @@ fv
         text-align: center
     }
     &_copy_big {
-        margin-bottom: 28px;
         @include rem(48);
         color: $cWhite;
         font-weight: bold;
@@ -53,7 +52,6 @@ fv
     }
 
     &_copy {
-        margin-bottom: 51px;
         @include rem(18);
         // text-align: center;
         color: $cWhite;
@@ -66,22 +64,18 @@ fv
         width: 280px;
         height: 60px;
         border-radius: 31px;
-        margin-bottom: 22px;
 
     }
 
     &_contact {
-        @include rem(16);
         color: $cWhite;
-        display: inline-block;
-        // width: 100%;
-        border-bottom: 1px solid $cWhite;
+        width: 100%;
     }
     
     &_link {
         
-        display: block;
-        width: 100%;
+        display: inline-block;
+        border-bottom: 1px solid $cWhite;
 
     }
 
@@ -96,71 +90,10 @@ fv
 
 /****************************************:
 
-intro
+section
 
 *****************************************:*/
-.top_intro {
-    padding: 63px 0 54px;
-    background: $cBlack;
 
-    .section_ttl {
-        line-height: 1;
-        color: $cWhite;
-        margin-bottom: 65px;
-    }
-
-    &_txtbox {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        color: $cWhite;
-    }
-    
-    &_txt {
-        @include rem(18);
-        margin-left: 57px;
-
-        &:first-child {
-            margin-left: 0;
-        }
-    }
-
-    &_box {
-        width: 100%;
-        // height: 248px;
-        background: $cWhite;
-        text-align: center;
-
-        &_txt.__big {
-            @include rem(36);
-            font-weight: bold;
-            z-index: 1;
-        }
-
-    }
-
-    &_inbox {
-        width: 869px;
-        height: 206px;
-        // margin: 5px;
-        border: 1px solid red;
-    }
-
-    &_border {
-        position: relative;
-
-        &:after {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 5px;
-            background: $cOrange;
-            bottom: 10px;
-            left: 0;
-            // opacity: .9;
-        }
-    }
-}
 
 
 

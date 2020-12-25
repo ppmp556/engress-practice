@@ -8,11 +8,8 @@ nav
 *****************************************:*/
 
 .nav {
-    width: 100%;
-    margin-left: 28px;
-    display: flex;
     position: relative;
-    justify-content: space-between;
+    display: flex;
 
     &_list {
         display: flex;
@@ -22,21 +19,20 @@ nav
     &_item {
         @include rem(16);
         line-height: 1.81;
-        margin-right: 28px;
+        margin-left: 28px;
         // letter-spacing: 0;
 
-        &:last-child {
-            margin-right: 0;
+        &:last-child() {
+            margin-left: 0;
         }
 
     }
 
     &_contact {
-        margin-left: 326px;
         display: flex;
-        align-items: center
+        margin-left: 326px;
     }
-
+    
     &_time {
         @include rem(12);
         line-height: 1.66;
@@ -45,19 +41,11 @@ nav
     }
 
     &_tel {
-        position: relative;
         @include rem(16);
 
         &:before {
-            position: absolute;
             content: '';
-            background: url(../img/top/telcion.29.svg) no-repeat;
-            width: 18px;
-            height: 18px;
-            display: block;
-            left: -15px;
-            top: 50%;
-            transform: translateY(-50%);
+            // background: url(../img/top/繝代せ\ n\29.svg);
         }
     }
 
@@ -187,21 +175,4 @@ nav
 
 
 
-}
-
-.site {
-
-    &_btn {
-        margin-left: 23px;
-        width: 140px;
-        height: 48px;
-        border: 1px solid currentColor;
-        color: $cWhite;
-        background-color: $cOrange;
-
-        &.__con {
-            margin-left: 10px;
-            background-color: $cBlack;
-        }
-    }
 }
