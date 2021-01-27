@@ -1,0 +1,8 @@
+@function l_height($row, $fontPoint) {
+    @return $row / $fontPoint; // linghe-height計算 行送り/フォントサイズ
+}
+
+
+@function l_spacing($av) {
+    @return ($av / 1000)+em; // leter-spacing  av/1000
+}
