@@ -15,7 +15,7 @@ header
 
     display: flex;
     align-items: center;
-    
+
     &_ttl {
         width: 136px;
         height: 27px;
@@ -32,7 +32,7 @@ fv
 
 *****************************************:*/
 
-.top_fv{
+.top_fv {
     background: url(../img/top/teachers.png) center / cover;
     // width: 100%;
     height: 476px;
@@ -42,6 +42,7 @@ fv
         margin: auto;
         text-align: center
     }
+
     &_copy_big {
         margin-bottom: 28px;
         @include rem(48);
@@ -49,7 +50,6 @@ fv
         font-weight: bold;
         letter-spacing: 0;
         line-height: 1.35
-
     }
 
     &_copy {
@@ -77,15 +77,15 @@ fv
         // width: 100%;
         border-bottom: 1px solid $cWhite;
     }
-    
+
     &_link {
-        
+
         display: block;
         width: 100%;
 
     }
 
-    
+
 
 
 }
@@ -109,16 +109,21 @@ intro
         margin-bottom: 65px;
     }
 
+    .section_inner {
+        padding: 0;
+    }
+
     &_txtbox {
         display: flex;
         justify-content: center;
         text-align: center;
         color: $cWhite;
     }
-    
+
     &_txt {
         @include rem(18);
         margin-left: 57px;
+        margin-bottom: 83px;
 
         &:first-child {
             margin-left: 0;
@@ -126,15 +131,21 @@ intro
     }
 
     &_box {
-        width: 100%;
-        // height: 248px;
+        width: 900px;
+        height: 248px;
+        padding: 16px;
         background: $cWhite;
         text-align: center;
+        display: flex;
 
         &_txt.__big {
             @include rem(36);
             font-weight: bold;
             z-index: 1;
+        }
+
+        &_txt {
+            @include rem(18);
         }
 
     }
@@ -143,21 +154,23 @@ intro
         width: 869px;
         height: 206px;
         // margin: 5px;
-        border: 1px solid red;
+        border: 1px solid $cBlack;
+        margin: auto;
     }
 
     &_border {
         position: relative;
+        z-index: 1;
 
         &:after {
             position: absolute;
             content: "";
             width: 100%;
-            height: 5px;
+            height: 8px;
             background: $cOrange;
-            bottom: 10px;
+            bottom: 5px;
             left: 0;
-            // opacity: .9;
+            z-index: -1;
         }
     }
 }
@@ -170,9 +183,305 @@ intro
 
 /****************************************:
 
-footer
+feature
+
+*****************************************:*/
+
+.top_feature {
+    padding: 59px 0 39px;
+
+    .section_ttl {
+        margin-bottom: 59px;
+    }
+
+    &_box {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+
+        }
+
+
+    }
+
+    &_txtbox {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    &_point {
+        background-color: $cOrange;
+        color: $cWhite;
+        width: 90px;
+        height: 30px;
+        padding: 8px 0 12px;
+        text-align: center;
+        margin-right: auto;
+        margin-bottom: 35px;
+    }
+
+    &_ttl {
+        @include rem(26);
+        line-height: 1.5;
+        margin-bottom: 19px;
+    }
+
+    &_txt {
+        @include rem(16);
+        line-height: 1.68;
+    }
+
+    &_imgbox {
+        width: 350px;
+        height: 240px;
+        // margin-left: 50px;
+
+        &:nth-child(even) {
+            // margin-right: 50px;
+            margin-left: initial;
+        }
+    }
+
+    &_bna {
+        background: url(../img/top/price.png) center / cover;
+        height: 217px;
+        display: flex;
+        margin-top: 53px;
+
+        &_box {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+
+        &_txt {
+            @include rem(26);
+            color: $cWhite;
+            margin-bottom: 27px;
+            text-align: center;
+        }
+
+        &_btn {
+            color: $cWhite;
+            background-color: transparent;
+            border: 1px solid currentColor;
+            width: 200px;
+            height: 50px;
+            border-radius: 30px;
+            display: block;
+
+        }
+
+    }
+}
+
+
+
+/****************************************:
+
+success
+
+*****************************************:*/
+
+.top_success {
+    padding: 58px 0 60px;
+    background-color: $cBlack;
+
+    .section_ttl {
+        margin-bottom: 137px;
+        color: $cWhite;
+    }
+
+    &_content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_box {
+        width: 280px;
+    }
+
+    &_wrap {
+        width: 280px;
+        height: 171px;
+        background-color: $cWhite;
+        position: relative;
+        margin-bottom: 16px;
+    }
+
+    &_imgbox {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 125px;
+        height: 140px;
+        background-color: $cWhite;
+        margin-top: 31px;
+    }
+
+    &_txt {
+        @include rem(16);
+        background-color: $cBlack;
+        color: $cWhite;
+        line-height: l_height(29, 16);
+        margin-bottom: 9px;
+    }
+
+    &_txtbox {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .top_success_txt {
+            display: inline-block;
+            background-color: $cWhite;
+            color: $cBlack;
+
+
+            &.__job {
+                width: 100px;
+                padding-left: 8px;
+                margin-bottom: 10px;
+            }
+
+            &.__name {
+                width: 172px;
+                padding-left: 8px;
+                margin-bottom: 10px;
+
+            }
+
+            &.__point {
+                width: 280px;
+                padding-right: 8px;
+            }
+        }
+    }
+}
+
+
+
+
+
+/****************************************:
+
+flow
 
 *****************************************:*/
 
 
+.top_flow {
+    padding: 58px 0 75px;
 
+    &_box {
+        display: flex;
+        margin-bottom: 8px;
+        align-items: center;
+        background-color: $cGray;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+
+    &_num {
+        color: $cWhite;
+        background-color: $cOrange;
+        padding: 24px 23px;
+        @include rem(16);
+        margin-right: 21px;
+    }
+
+    &_txtwrap {
+        width: 200px;
+        border-right: 1px solid $cBlack;
+    }
+
+    &_ttl {
+        @include rem(18);
+        width: 200px;
+        display: block;
+    }
+
+
+    &_txt {
+        margin-left: 50px;
+        @include rem(16);
+    }
+}
+
+
+
+
+/****************************************:
+
+question
+
+*****************************************:*/
+
+.top_question {
+    padding: 0 0 90px;
+
+    &_txt {
+        @include rem(16);
+        position: relative;
+        background-color: $cWhite;
+        line-height: l_height(27, 16);
+        border-top: 1px solid $cBlack;
+        margin-bottom: 15px;
+        padding-top: 20px;
+
+
+        &::after {
+            content: "+";
+            @include rem(25);
+            font-weight: bold;
+            position: absolute;
+            right: 2.5%;
+        }
+
+        &.open+.answer {
+            height: 80px;
+        }
+
+        &.open::after {
+            content: "ー";
+            @include rem(20);
+            font-weight: bold;
+        }
+
+    }
+
+    .answer {
+        height: 0;
+        overflow: hidden;
+        @include rem(16);
+        position: relative;
+        line-height: l_height(27, 16);
+        background-color: $cGray;
+        // padding: 23px 28px 15px 26px;
+
+        border-bottom: 1px solid $cBlack;
+    }
+}
+
+
+
+
+
+
+/****************************************:
+
+footer
+
+*****************************************:*/

@@ -27,8 +27,8 @@ body {
 
 // スマホでタッチしたとき、青い表示がでないようにする
 a {
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-    cursor:pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 
@@ -95,6 +95,6 @@ a {
 .section_inner {
     width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
+    // padding: 0 20px;
 
 }

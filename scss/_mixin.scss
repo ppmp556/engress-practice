@@ -65,7 +65,8 @@ font-size定義
 //$sizeにpx表示を入れて使う
 
 @mixin rem($size) {
-    font-size: $size + px; /*IE9以前に対応する*/
+    font-size: $size + px;
+    /*IE9以前に対応する*/
     font-size: ($size / 16) + rem;
 }
 
@@ -89,89 +90,69 @@ flex定義
 
 **************/
 
-
 // 親要素に対して中央寄せ
 // 使用時は親要素にpostion:retative
 //x:横方向、y:縦方向, xy:縦横方向中央寄せ
 
+// 使うときは引数に x or y or xy
 @mixin center($direction) {
-	position: absolute;
-	@if $direction==xy {
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	@else if $direction==x {
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	@else if $direction==y {
-		top: 50%;
-		transform: translateY(-50%);
-	}
+    position: absolute;
+
+    @if $direction==xy {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @else if $direction==x {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @else if $direction==y {
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 // absolute
-@mixin absolute($top:null, $right:null, $bottom:null, $left:null){
+//使うときはnullの部分に数値
+@mixin absolute($top:null, $right:null, $bottom:null, $left:null) {
     position: absolute;
-    @if $top != null{
+
+    @if $top !=null {
         top: $top;
     }
-    @if $right != null{
+
+    @if $right !=null {
         right: $right;
     }
-    @if $bottom != null{
+
+    @if $bottom !=null {
         bottom: $bottom;
     }
-    @if $left != null{
+
+    @if $left !=null {
         left: $left;
     }
 }
 
 
-// hover
-//引数にfalse指定で、新たに記述したスタイルのみ適用
-@mixin hover($flag: true){
-    @include min-screen(900px){
-        transition: .2s;
-        &:hover{
-            transition: .3s;
-            @if $flag == true{
-                opacity: .5;
-            }
-                @content
-            }
+// hover用
+@mixin hover($ie: false) {
+    &:focus {
+        @content;
+    }
+
+    @media (hover) {
+        &:hover {
+            @content;
+        }
+    }
+
+    @if $ie {
+        @at-root .ua-ie &:hover {
+            @content;
+        }
     }
 }
-
-@mixin hoverall($focus:null,$opacity:null) {
-
-    transition: $anime_nomal;
-
-    @if $focus == none {
-        // focusが不要な場合
-        @if $opacity == none{
-            // focusと不透明度が不要な場合
-            &:hover,&:active{
-                opacity: $hover_opacity;
-                @content;
-            }
-        } @else{
-            // focus のみ不要な場合
-            &:hover,&:active{
-                opacity: $hover_opacity;
-                @content;
-            }
-        }
-    } @else if $opacity == none{
-        // 不透明度のみ不要な場合
-        &:hover,&:active,&:focus{
-            @content;
-        }
-    } @else {
-        &:hover,&:active,&:focus{
-            opacity: $hover_opacity;
-            @content;
-        }
-    } // @else
-} // @mixin

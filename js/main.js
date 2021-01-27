@@ -65,5 +65,22 @@ $(() => {
         }
     });
 
+    let ques = $(".top_question_txt");
+    let ans = $(".answer");
+
+    ques.click(() => {
+
+        ques.not(this).removeClass("open");
+        ques.not(this).next(ans).animate({
+            slideUp: 500
+        });
+
+        $(this).toggleClass("open");
+
+        $(this).next(ans).animate({
+            slideDown: 500
+        });
+    });
+
 
 });

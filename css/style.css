@@ -104,7 +104,6 @@ a {
 .section_inner {
   width: 900px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 /****************************************:
@@ -424,6 +423,10 @@ intro
   margin-bottom: 65px;
 }
 
+.top_intro .section_inner {
+  padding: 0;
+}
+
 .top_intro_txtbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -442,6 +445,7 @@ intro
   /*IE9以前に対応する*/
   font-size: 1.125rem;
   margin-left: 57px;
+  margin-bottom: 83px;
 }
 
 .top_intro_txt:first-child {
@@ -449,9 +453,15 @@ intro
 }
 
 .top_intro_box {
-  width: 100%;
+  width: 900px;
+  height: 248px;
+  padding: 16px;
   background: #ffffff;
   text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .top_intro_box_txt.__big {
@@ -462,24 +472,372 @@ intro
   z-index: 1;
 }
 
+.top_intro_box_txt {
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+}
+
 .top_intro_inbox {
   width: 869px;
   height: 206px;
-  border: 1px solid red;
+  border: 1px solid #1b224c;
+  margin: auto;
 }
 
 .top_intro_border {
   position: relative;
+  z-index: 1;
 }
 
 .top_intro_border:after {
   position: absolute;
   content: "";
   width: 100%;
-  height: 5px;
+  height: 8px;
   background: #f5a623;
-  bottom: 10px;
+  bottom: 5px;
   left: 0;
+  z-index: -1;
+}
+
+/****************************************:
+
+feature
+
+*****************************************:*/
+.top_feature {
+  padding: 59px 0 39px;
+}
+
+.top_feature .section_ttl {
+  margin-bottom: 59px;
+}
+
+.top_feature_box {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_feature_box:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.top_feature_txtbox {
+  width: 500px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_feature_point {
+  background-color: #f5a623;
+  color: #ffffff;
+  width: 90px;
+  height: 30px;
+  padding: 8px 0 12px;
+  text-align: center;
+  margin-right: auto;
+  margin-bottom: 35px;
+}
+
+.top_feature_ttl {
+  font-size: 26px;
+  /*IE9以前に対応する*/
+  font-size: 1.625rem;
+  line-height: 1.5;
+  margin-bottom: 19px;
+}
+
+.top_feature_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.top_feature_imgbox {
+  width: 350px;
+  height: 240px;
+}
+
+.top_feature_imgbox:nth-child(even) {
+  margin-left: initial;
+}
+
+.top_feature_bna {
+  background: url(../img/top/price.png) center/cover;
+  height: 217px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 53px;
+}
+
+.top_feature_bna_box {
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_feature_bna_txt {
+  font-size: 26px;
+  /*IE9以前に対応する*/
+  font-size: 1.625rem;
+  color: #ffffff;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.top_feature_bna_btn {
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid currentColor;
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+  display: block;
+}
+
+/****************************************:
+
+success
+
+*****************************************:*/
+.top_success {
+  padding: 58px 0 60px;
+  background-color: #1b224c;
+}
+
+.top_success .section_ttl {
+  margin-bottom: 137px;
+  color: #ffffff;
+}
+
+.top_success_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_success_box {
+  width: 280px;
+}
+
+.top_success_wrap {
+  width: 280px;
+  height: 171px;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.top_success_imgbox {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 125px;
+  height: 140px;
+  background-color: #ffffff;
+  margin-top: 31px;
+}
+
+.top_success_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  background-color: #1b224c;
+  color: #ffffff;
+  line-height: 1.8125;
+  margin-bottom: 9px;
+}
+
+.top_success_txtbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_success_txtbox .top_success_txt {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1b224c;
+}
+
+.top_success_txtbox .top_success_txt.__job {
+  width: 100px;
+  padding-left: 8px;
+  margin-bottom: 10px;
+}
+
+.top_success_txtbox .top_success_txt.__name {
+  width: 172px;
+  padding-left: 8px;
+  margin-bottom: 10px;
+}
+
+.top_success_txtbox .top_success_txt.__point {
+  width: 280px;
+  padding-right: 8px;
+}
+
+/****************************************:
+
+flow
+
+*****************************************:*/
+.top_flow {
+  padding: 58px 0 75px;
+}
+
+.top_flow_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8f8f8;
+}
+
+.top_flow_box:last-child {
+  margin-bottom: 0;
+}
+
+.top_flow_num {
+  color: #ffffff;
+  background-color: #f5a623;
+  padding: 24px 23px;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  margin-right: 21px;
+}
+
+.top_flow_txtwrap {
+  width: 200px;
+  border-right: 1px solid #1b224c;
+}
+
+.top_flow_ttl {
+  font-size: 18px;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+  width: 200px;
+  display: block;
+}
+
+.top_flow_txt {
+  margin-left: 50px;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+/****************************************:
+
+question
+
+*****************************************:*/
+.top_question {
+  padding: 0 0 90px;
+}
+
+.top_question_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  position: relative;
+  background-color: #ffffff;
+  line-height: 1.6875;
+  border-top: 1px solid #1b224c;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+
+.top_question_txt::after {
+  content: "+";
+  font-size: 25px;
+  /*IE9以前に対応する*/
+  font-size: 1.5625rem;
+  font-weight: bold;
+  position: absolute;
+  right: 2.5%;
+}
+
+.top_question_txt.open + .answer {
+  height: 80px;
+}
+
+.top_question_txt.open::after {
+  content: "ー";
+  font-size: 20px;
+  /*IE9以前に対応する*/
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.top_question .answer {
+  height: 0;
+  overflow: hidden;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  position: relative;
+  line-height: 1.6875;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #1b224c;
 }
 
 /****************************************:
