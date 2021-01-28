@@ -482,6 +482,271 @@ question
 
 /****************************************:
 
+info
+
+*****************************************:*/
+
+.top_info {
+    padding-bottom: 119px;
+
+    .section_ttl {
+        @include rem(32);
+        line-height: l_height(54, 32);
+        text-align: left;
+        margin-bottom: 32px;
+    }
+
+
+    &_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top_blog {
+
+        &_contents {
+            max-width: 50%;
+
+            display: flex;
+            margin-bottom: 31px;
+        }
+
+        &_imgbox {
+            width: 150px;
+            height: 110px;
+            margin-right: 20px;
+            position: relative;
+            background-position-y: 20%;
+
+            &::before {
+                position: absolute;
+                content: "カテゴリー";
+                top: 0;
+                left: 0;
+                background: $cBlack;
+                color: $cWhite;
+                @include rem(12);
+                display: block;
+                padding: 6px 9px;
+
+            }
+        }
+
+        &_txtbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &_txt {
+            @include rem(16);
+        }
+
+        &_date {
+            @include rem(12);
+        }
+    }
+
+    &_news {
+
+        .top_news {
+
+
+
+
+            &_item {
+                margin-bottom: 17px;
+            }
+        }
+
+
+
+
+        .news_link {
+            @include rem(16);
+            line-height: l_height(27, 16);
+            border-bottom: 1px solid $cBlack
+        }
+
+
+        &_date {
+            @include rem(12);
+        }
+    }
+}
+
+
+
+/****************************************:
+
+top_bana
+
+*****************************************:*/
+
+.top_bana {
+    background: url(../img/top/cta.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 256px;
+    display: flex;
+
+    &_content {
+        margin: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center
+    }
+
+    .top_ttl {
+        @include rem(32);
+        line-height: l_height(54, 32);
+        color: $cWhite;
+        margin-bottom: 16px;
+    }
+
+    .site_btn {
+        width: 280px;
+        border-radius: 25px;
+        @include rem(16);
+        margin: 0 auto 22px;
+        display: inline-block;
+    }
+
+    .contact_link {
+        @include rem(16);
+        color: $cWhite;
+        border-bottom: 1px solid $cWhite;
+    }
+
+
+}
+
+.top_telbox {
+    padding: 20px 23px;
+    display: flex;
+    justify-content: center;
+
+    .top_tel_txt {
+        @include rem(16);
+    }
+
+    .top_tel_spa {
+        @include rem(36);
+        margin: 0 20px;
+    }
+}
+
+
+
+/****************************************:
+
 footer
 
 *****************************************:*/
+
+.footer {
+
+    &_nav {
+        position: relative;
+        display: flex;
+    }
+
+
+    &_inner {
+        background: $cBlack;
+        color: $cWhite;
+        width: 100%;
+        height: 193px;
+
+    }
+
+
+    &_nav_list {
+        display: flex;
+        margin-top: 49px;
+        margin-left: 191px;
+    }
+
+    &_nav_item {
+        margin-right: 43px;
+        position: relative;
+        @include rem(16);
+
+        &:after {
+            content: '|';
+            padding-left: 21.5px;
+            position: absolute;
+
+        }
+
+        &:last-child:after {
+            position: absolute;
+            content: "";
+        }
+    }
+
+
+
+    &_right {
+        position: absolute;
+        top: 35px;
+        right: 172px;
+        margin-bottom: 68px;
+
+    }
+
+
+    &_imgbox {
+        width: 197px;
+        height: 58px;
+        display: block;
+        background: $cWhite;
+        padding: 14px 19px;
+        margin-bottom: 27px;
+    }
+
+    &_nav_tel {
+        @include rem(16);
+        position: relative;
+        text-align: right;
+        margin-bottom: 13px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background: url(../img/top/telicon16.svg);
+            display: block;
+            width: 10px;
+            height: 15px;
+            left: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &_nav_time {
+        @include rem(12);
+        text-align: right;
+    }
+
+    &_link {
+        width: 159px;
+        height: 31px;
+    }
+
+    &_txtbox {
+        background: $cWhite;
+        color: $cBlack;
+        text-align: right;
+        padding: 12px 0;
+    }
+
+    small {
+        line-height: l_hight(20, 12);
+        @include rem(12);
+        margin-right: 173px;
+
+    }
+
+}

@@ -842,6 +842,305 @@ question
 
 /****************************************:
 
+info
+
+*****************************************:*/
+.top_info {
+  padding-bottom: 119px;
+}
+
+.top_info .section_ttl {
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  line-height: 1.6875;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.top_info_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_info .top_blog_contents {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.top_info .top_blog_imgbox {
+  width: 150px;
+  height: 110px;
+  margin-right: 20px;
+  position: relative;
+  background-position-y: 20%;
+}
+
+.top_info .top_blog_imgbox::before {
+  position: absolute;
+  content: "カテゴリー";
+  top: 0;
+  left: 0;
+  background: #1b224c;
+  color: #ffffff;
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  display: block;
+  padding: 6px 9px;
+}
+
+.top_info .top_blog_txtbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_info .top_blog_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+.top_info .top_blog_date {
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+}
+
+.top_info_news .top_news_item {
+  margin-bottom: 17px;
+}
+
+.top_info_news .news_link {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  line-height: 1.6875;
+  border-bottom: 1px solid #1b224c;
+}
+
+.top_info_news_date {
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+}
+
+/****************************************:
+
+top_bana
+
+*****************************************:*/
+.top_bana {
+  background: url(../img/top/cta.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 256px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.top_bana_content {
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.top_bana .top_ttl {
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  line-height: 1.6875;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.top_bana .site_btn {
+  width: 280px;
+  border-radius: 25px;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  margin: 0 auto 22px;
+  display: inline-block;
+}
+
+.top_bana .contact_link {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.top_telbox {
+  padding: 20px 23px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top_telbox .top_tel_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+.top_telbox .top_tel_spa {
+  font-size: 36px;
+  /*IE9以前に対応する*/
+  font-size: 2.25rem;
+  margin: 0 20px;
+}
+
+/****************************************:
+
 footer
 
 *****************************************:*/
+.footer_nav {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_inner {
+  background: #1b224c;
+  color: #ffffff;
+  width: 100%;
+  height: 193px;
+}
+
+.footer_nav_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 49px;
+  margin-left: 191px;
+}
+
+.footer_nav_item {
+  margin-right: 43px;
+  position: relative;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+.footer_nav_item:after {
+  content: '|';
+  padding-left: 21.5px;
+  position: absolute;
+}
+
+.footer_nav_item:last-child:after {
+  position: absolute;
+  content: "";
+}
+
+.footer_right {
+  position: absolute;
+  top: 35px;
+  right: 172px;
+  margin-bottom: 68px;
+}
+
+.footer_imgbox {
+  width: 197px;
+  height: 58px;
+  display: block;
+  background: #ffffff;
+  padding: 14px 19px;
+  margin-bottom: 27px;
+}
+
+.footer_nav_tel {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  position: relative;
+  text-align: right;
+  margin-bottom: 13px;
+}
+
+.footer_nav_tel:after {
+  content: '';
+  position: absolute;
+  background: url(../img/top/telicon16.svg);
+  display: block;
+  width: 10px;
+  height: 15px;
+  left: 70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.footer_nav_time {
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.footer_link {
+  width: 159px;
+  height: 31px;
+}
+
+.footer_txtbox {
+  background: #ffffff;
+  color: #1b224c;
+  text-align: right;
+  padding: 12px 0;
+}
+
+.footer small {
+  line-height: l_hight(20, 12);
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  margin-right: 173px;
+}
