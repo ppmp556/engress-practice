@@ -1,0 +1,188 @@
+// 下層ページ用
+// plan.html用
+
+
+/****************************************:
+
+fv
+
+*****************************************:*/
+.fv {
+    background: url(../../img/section-plan/plan.png) center / cover;
+    // width: 100%;
+    height: 221px;
+    display: flex;
+
+    &_inner {
+        margin: auto;
+        text-align: center
+    }
+
+    &_copy_big {
+        // margin-bottom: 28px;
+        @include rem(32);
+        color: $cWhite;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 1.35;
+    }
+
+
+}
+
+
+
+
+/****************************************:
+
+price
+
+*****************************************:*/
+
+.price {
+    padding: 108px 0 90px;
+
+    &_content {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &_plus {
+        position: relative;
+        // margin: auto;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 27px;
+            border: 1px solid $cBlack;
+            top: 50%;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            height: 27px;
+            border: 1px solid $cBlack;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &_box {
+        width: 280px;
+        line-height: 90px;
+        background: $cBlack;
+        margin: 60px auto 46px;
+
+        &_txt {
+            text-align: center;
+            @include rem(22);
+            color: $cWhite;
+            font-weight: bold;
+        }
+    }
+
+
+    &_txt {
+        @include rem(16);
+    }
+}
+
+
+/****************************************:
+
+plan
+
+*****************************************:*/
+
+.plan {
+    padding: 0 0 61px;
+
+    .section_ttl {
+        margin-bottom: 106px;
+    }
+
+    &_list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &_item {
+        margin-right: 7px;
+
+        &.__top {
+            margin-bottom: -50px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &_ttlbox {
+        background: $cBlack;
+        width: 220px;
+        line-height: 60px;
+
+        &.__change {
+            background: $cOrange;
+            border-color: $cOrange;
+        }
+    }
+
+    &_ttl {
+        text-align: center;
+        @include rem(16);
+        color: $cWhite;
+        font-weight: bold;
+    }
+
+    &_txtbox {
+        border: 1px solid $cBlack;
+        border-top: none;
+        height: 414px;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    &_txt_price {
+        @include rem(25);
+        padding-top: 30px;
+
+        &.__orange {
+            color: $cOrange;
+        }
+
+    }
+
+
+
+    &_txt {
+        text-align: center;
+        @include rem(16);
+        margin-bottom: 20px;
+
+        &.__check {
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 10px;
+                height: 5px;
+                border-left: 3px solid $cBlack;
+                border-bottom: 3px solid $cBlack;
+                transform: rotate(-35deg) translateY(-50%);
+                left: 0;
+                top: 50%;
+
+            }
+
+        }
+    }
+}

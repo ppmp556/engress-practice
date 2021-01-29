@@ -1144,3 +1144,307 @@ footer
   font-size: 0.75rem;
   margin-right: 173px;
 }
+
+/****************************************:
+
+fv
+
+*****************************************:*/
+.fv {
+  background: url(../../img/section-plan/plan.png) center/cover;
+  height: 221px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fv_inner {
+  margin: auto;
+  text-align: center;
+}
+
+.fv_copy_big {
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 1.35;
+}
+
+/****************************************:
+
+price
+
+*****************************************:*/
+.price {
+  padding: 108px 0 90px;
+}
+
+.price_content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price_plus {
+  position: relative;
+}
+
+.price_plus::before {
+  position: absolute;
+  content: '';
+  width: 27px;
+  border: 1px solid #1b224c;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.price_plus::after {
+  position: absolute;
+  content: '';
+  height: 27px;
+  border: 1px solid #1b224c;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.price_box {
+  width: 280px;
+  line-height: 90px;
+  background: #1b224c;
+  margin: 60px auto 46px;
+}
+
+.price_box_txt {
+  text-align: center;
+  font-size: 22px;
+  /*IE9以前に対応する*/
+  font-size: 1.375rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.price_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+/****************************************:
+
+plan
+
+*****************************************:*/
+.plan {
+  padding: 0 0 61px;
+}
+
+.plan .section_ttl {
+  margin-bottom: 106px;
+}
+
+.plan_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.plan_item {
+  margin-right: 7px;
+}
+
+.plan_item.__top {
+  margin-bottom: -50px;
+}
+
+.plan_item:last-child {
+  margin-right: 0;
+}
+
+.plan_ttlbox {
+  background: #1b224c;
+  width: 220px;
+  line-height: 60px;
+}
+
+.plan_ttlbox.__change {
+  background: #f5a623;
+  border-color: #f5a623;
+}
+
+.plan_ttl {
+  text-align: center;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.plan_txtbox {
+  border: 1px solid #1b224c;
+  border-top: none;
+  height: 414px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan_txt_price {
+  font-size: 25px;
+  /*IE9以前に対応する*/
+  font-size: 1.5625rem;
+  padding-top: 30px;
+}
+
+.plan_txt_price.__orange {
+  color: #f5a623;
+}
+
+.plan_txt {
+  text-align: center;
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.plan_txt.__check {
+  position: relative;
+  display: inline-block;
+}
+
+.plan_txt.__check::before {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 5px;
+  border-left: 3px solid #1b224c;
+  border-bottom: 3px solid #1b224c;
+  -webkit-transform: rotate(-35deg) translateY(-50%);
+          transform: rotate(-35deg) translateY(-50%);
+  left: 0;
+  top: 50%;
+}
+
+/****************************************:
+
+fv
+
+*****************************************:*/
+.fv {
+  background: url(../../img/section-blog/blog.png) center/cover;
+}
+
+/****************************************:
+
+blog
+
+*****************************************:*/
+.blog {
+  padding-bottom: 119px;
+}
+
+.blog .section_ttl {
+  font-size: 32px;
+  /*IE9以前に対応する*/
+  font-size: 2rem;
+  line-height: 1.6875;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.blog_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog_contents {
+  max-width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.blog_imgbox {
+  width: 150px;
+  height: 110px;
+  margin-right: 20px;
+  position: relative;
+  background-position-y: 20%;
+}
+
+.blog_imgbox::before {
+  position: absolute;
+  content: "カテゴリー";
+  top: 0;
+  left: 0;
+  background: #1b224c;
+  color: #ffffff;
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+  display: block;
+  padding: 6px 9px;
+}
+
+.blog_txtbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog_txt {
+  font-size: 16px;
+  /*IE9以前に対応する*/
+  font-size: 1rem;
+}
+
+.blog_date {
+  font-size: 12px;
+  /*IE9以前に対応する*/
+  font-size: 0.75rem;
+}
